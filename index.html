@@ -21,7 +21,7 @@
     <header class="container">
         <nav class="navbar navbar-expand-lg bg-light p-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">pkTech Edu</a>
+                <a class="navbar-brand" href="#"><span class="text-info fw-bold">pkTech</span> Edu</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +33,14 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#courses">Courses</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link ">Details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ">Success</a>
+                            <a class="nav-link " href="#success">Success</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ">About</a>
@@ -114,7 +114,7 @@
     </Section>
     <!-- SliderEnd -->
     <!-- Discover courses Start -->
-    <section class="container mt-5">
+    <section id="courses" class="container mt-5">
         <h1 class="text-center fw-bold">Discover Our Popular Courses</h1>
         <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of
             a page when looking
@@ -286,15 +286,35 @@
                     content of a page when
                     looking at its layout.</p>
             </div>
-            <div class="text-center mt-5 ms-5"> <button type="submit" class="btn bg-white fw-semibold">Register
+            <div class="text-center mt-5 ms-5"> <button type="submit" class="btn bg-white fw-semibold "
+                    data-bs-toggle="modal" data-bs-target="#reg-modal">Register
                     Now</button>
             </div>
         </div>
     </section>
+    <!-- Modal Part -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" area-labelledby="modal-title" area-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the latest update</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" area-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please Register Here</p>
+                    <label for="modal-email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g:someone@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Ready to join Part End -->
     <!-- successful Part start -->
     <Section>
-        <div class="container mt-5">
+        <div id="success" class="container mt-5">
             <h1>Meet Our Successfull Students</h1>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout.</p>
