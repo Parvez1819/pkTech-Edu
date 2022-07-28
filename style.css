@@ -1,6 +1,25 @@
-.bg-cover {
-    object-fit: cover;
-    background-color: black;
-    width: 100vw;
-    height: 800px;
-}
+ .socials {
+     list-style: none !important;
+     align-items: center !important;
+     justify-content: center !important;
+     margin: 1rem 0 3rem 0 !important;
+ }
+
+ .socials li {
+     margin: 0 10px !important;
+ }
+
+ .socials a {
+     text-decoration: none !important;
+     color: #fff !important;
+
+ }
+
+ .socials a i {
+     font-size: 2rem !important;
+     transition: color .4s ease !important;
+ }
+
+ .socials a i:hover {
+     color: aqua !important;
+ }
